@@ -1,0 +1,76 @@
+---
+import Facebook from "../icons/Facebook.astro";
+import Instagram from "../icons/Instagram.astro";
+
+
+---
+
+<div id="contact" class="h-screen">
+    <div class="px-28 flex flex-col justify-center">
+        <h3 class="text-5xl font-bold">Solicitar informes</h3>
+        <p class="text-xl">Déjanos tus datos para recibir informes más detallados.</p>
+
+        <form action="" class="mt-10 grid grid-cols-2 gap-12">
+            <div>
+                <label for="" class="block text-sm text-neutral-500">Nombre</label>
+                <input type="text" class="border-b-2 p-1 focus:outline-none focus:border-neutral-900 w-full text-3xl">
+            </div>
+            <div>
+                <label for="" class="block text-sm text-neutral-500">Apellidos</label>
+                <input type="text" class="border-b-2 p-1 focus:outline-none focus:border-neutral-900 w-full text-3xl">
+            </div>
+            <div>
+                <label for="" class="block text-sm text-neutral-500">Correo eléctronico</label>
+                <input type="text" class="border-b-2 p-1 focus:outline-none focus:border-neutral-900 w-full text-3xl">
+            </div>
+            <div>
+                <label for="" class="block text-sm text-neutral-500">Teléfono</label>
+                <input type="text" class="border-b-2 p-1 focus:outline-none focus:border-neutral-900 w-full text-3xl">
+            </div>
+            <div class="col-span-2">
+                <input type="checkbox" name="" id="">
+                <label for="">Acepto las politicas del <a href="" class="text-neutral-700 font-medium">Aviso de privacidad</a></label>
+            </div>
+            <div class="col-span-2 justify-self-end">
+                <a href="" class="border border-#13151a p-4 uppercase">
+                    Enviar
+                </a>
+            </div>
+        </form>
+    </div>
+    <div class="bg-neutral-800 relative">
+        <img src="src/assets/24A_S5_CDM_R01_vista_1.jpg" alt="" class="w-full h-full object-cover opacity-40">
+        <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <h3 class="text-white font-bold text-6xl">Contáctanos</h3>
+
+            <div class="text-white text-xl mt-6">
+                <p>123 Avenida Principal,</p>
+                <p>Ciudad Imaginaria,</p>
+                <p>País de las Maravillas.</p>
+            </div>
+            <div class="text-white text-xl mt-6">
+                <p>Email: <span>aliaresidencial@casasdomum.com</span></p>
+                <p>Tel.: <span>(444) 447 -7205</span></p>
+            </div>
+            <div class="text-white text-xl mt-6">
+                <span class="font-semibold">Siguenos en</span>
+                <div class="mt-4 flex gap-2">
+                    <a href="">
+                        <Facebook />
+                    </a>
+                    <a href="">
+                        <Instagram />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+	#contact {
+        /* background: #13151a; */
+		display: grid;
+		grid-template-columns: 1fr 650px;/*La primer columna 350px lo demas 1 fracción */
+	}
+</style>

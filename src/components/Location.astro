@@ -1,0 +1,26 @@
+---
+import { MapView } from "./MapView";
+
+
+---
+
+<div id="location" class="h-[80vh]">
+    <div class="relative px-28 flex flex-col justify-center">
+        <h3 class="font-bold text-5xl">Conoce tu entorno</h3>
+        <p class="text-xl">¡Explora nuestra ubicación privilegiada en el corazón de la ciudad! Situado en [dirección], nuestro fraccionamiento ofrece un estilo de vida excepcional con acceso rápido a todo lo que necesitas. Rodeado de impresionantes paisajes y comodidades modernas, cada día es una aventura en nuestro vibrante vecindario.</p>
+        <img src="src/assets/icono_icono_gris.png" alt="" class="absolute -left-40 top-1/2 transform -translate-y-1/2 -z-30 opacity-25">
+    </div>
+    <div class="bg-slate-200 flex items-center justify-center">
+        <div class="w-full h-full">
+            <MapView client:load />
+        </div>
+    </div>
+</div>
+
+<style>
+	#location {
+        /* background: #13151a; */
+		display: grid;
+		grid-template-columns: 750px 1fr;/*La primer columna 350px lo demas 1 fracción */
+	}
+</style>

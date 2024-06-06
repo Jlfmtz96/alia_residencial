@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import HeroSlide from '../components/HeroSlide';
+import Amenities from '../components/Amenities.astro';
+import Models from '../components/Models.astro';
+import Contact from '../components/Contact.astro';
+import Location from '../components/Location.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<HeroSlide client:load/>
+
+	<Amenities />
+	<Models />
+	<Location />
+	<Contact />
+	<Footer />
+</Layout>
+

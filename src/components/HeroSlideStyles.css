@@ -1,0 +1,6 @@
+/* styles.css */
+.active-button {
+    border-bottom: 2px solid #fff; /* Línea debajo del botón activo */
+    border-bottom-width: 1px; /* Reducir el ancho del borde */
+}
+
