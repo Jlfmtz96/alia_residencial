@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import Logo from '../assets/domum bl.png'
+import Logo from '../assets/Aliìa_logo_blanco.png'
 import LogoColor from '../assets/domum color.png'
 
 export default function Navbar() {
@@ -39,12 +39,12 @@ export default function Navbar() {
   return (
     <div>
         <header className={`py-2 px-10 fixed top-0 w-full justify-between z-40 text-white transition-all duration-300 ease-in-out ${
-          isScrolled ? 'backdrop-blur-md' : ''
+          isScrolled ? 'backdrop-blur-md text-[#1D1D1B] font-semibold' : ''
         }`} style={{ backdropFilter: isScrolled ? 'blur(10px)' : 'none' }}>
             <div className="container mx-auto flex items-center">
                 <div className="flex flex-grow basis-0">
                     <a href="/">
-                        <img src="src/assets/Aliìa_logo_blanco.png" alt="" className={`w-52 transition-all duration-300 ease-in-out ${isScrolled ? 'filter-invert' : ''}`}/>
+                        <img src={Logo.src} alt="" className={`w-52 transition-all duration-300 ease-in-out ${isScrolled ? 'filter-invert' : ''}`}/>
                         {/* <h1 className='text-3xl font-bold'>Domum</h1> */}
                     </a>
                 </div>
@@ -56,7 +56,7 @@ export default function Navbar() {
                   <a href="" className='hidden lg:flex'>
                     casasdomum@gmail.com
                   </a>
-                  <button className='border-[1px] p-1 text-white' onClick={toggleMenu}>
+                  <button className='border-[1px] p-1' onClick={toggleMenu}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-align-justify">
                       <line x1="3" x2="21" y1="6" y2="6"/>
                       <line x1="3" x2="21" y1="12" y2="12"/>
@@ -76,18 +76,18 @@ export default function Navbar() {
                       </button>
                       <nav className='mt-12 text-3xl'>
                         <ul className="[&>li>a]:text-current [&>li>a]:font-bold [&>li>a]:block [&>li>a]:pr-32 [&>li>a]:py-4">
-                            <li><a href="/" className='hover:text-[#C91E7B]'>Inicio</a></li>
-                            <li><a href="#" className='hover:text-[#C91E7B]'>Amenidades</a></li>
-                            <li><a href="#" className='hover:text-[#C91E7B]'>Modelos</a></li>
-                            <li><a href="#" className='hover:text-[#C91E7B]'>Contacto</a></li>
+                            <li><a href="/" className='hover:text-[#CFC9BD]'>Inicio</a></li>
+                            <li><a href="#" className='hover:text-[#CFC9BD]'>Amenidades</a></li>
+                            <li><a href="#" className='hover:text-[#CFC9BD]'>Modelos</a></li>
+                            <li><a href="#" className='hover:text-[#CFC9BD]'>Contacto</a></li>
                         </ul>
                       </nav>
 
                       <div className="flex space-x-8 mt-40">
-                        <a href="https://es-la.facebook.com/COMEBI.MX/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C91E7B]">
+                        <a href="https://es-la.facebook.com/COMEBI.MX/" target="_blank" rel="noopener noreferrer" className="hover:text-[#CFC9BD]">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                         </a>
-                        <a href="https://www.instagram.com/tu.casa.comebi/" target="_blank"  rel="noopener noreferrer" className="hover:text-[#C91E7B]">
+                        <a href="https://www.instagram.com/tu.casa.comebi/" target="_blank"  rel="noopener noreferrer" className="hover:text-[#CFC9BD]">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                         </a>
                       </div>

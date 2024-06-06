@@ -1,7 +1,7 @@
 // Slider.js
 import { useState, useEffect } from 'react';
 import './HeroSlideStyles.css'
-//import Sl1 from 'src/assets/24A_CDM_R08_CASA_C-1.jpg'
+import Sl1 from '../assets/24A_CDM_R08_CASA_C-1.jpg'
 import Cdm from "../assets/cdm.jpg"
 import Villa from "../assets/24A_S5_CDM_R01_vista_1.jpg"
 import R8 from '../assets/r8.jpg'
@@ -10,31 +10,31 @@ import R4 from '../assets/24A_CDM_R10_ACCESO.jpg'
 
 const images = [
     {
-        imagen: 'src/assets/24A_CDM_R10_ACCESO.jpg',
+        imagen: R4.src,
         url: '/desarrollo-lagos',
         title: 'Alia Residencial',
         location: 'Querétaro, México'
     },
     {
-        imagen: 'src/assets/24A_CDM_R06B_CASA_C-1.jpg',
+        imagen: Sl1.src,
         url: '/desarrollo-lagos',
         title: 'Casas Domum',
         location: 'San Luis Potosí, México'
     },
     {
-        imagen: 'src/assets/24A_S5_CDM_R01_vista_1.jpg',
+        imagen: Villa.src,
         url: '/coming-soon-vm',
         title: 'Alia Residencial',
         location: 'San Luis Potosí, México'
     },
     {
-      imagen: 'src/assets/r8.jpg',
+      imagen: R8.src,
       url: '/desarrollo-lagos',
       title: 'Casas Domum',
       location: 'San Luis Potosí, México'
   },
   {
-      imagen: 'src/assets/cdm.jpg',
+      imagen: Cdm.src,
       url: '/desarrollo-lagos',
       title: 'Alia Residencial',
       location: 'Querétaro, México'

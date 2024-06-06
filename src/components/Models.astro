@@ -1,18 +1,22 @@
 ---
 import { DragCloseDrawerExample } from "./DragCloseDrawer";
 
-
+import R2 from '../assets/r2.jpeg';
+import Viena from '../assets/modelo-3d.png';
+import Recorrido from '../assets/bracha haziza korazim.mp4';
 ---
 
 <div id="models" class="h-screen">
     <div>
-        <img src="src/assets/r2.jpeg" alt="" class="object-cover w-full h-full">
+        <!-- <video src={Recorrido} loop autoplay muted class="object-cover w-full h-full"></video> -->
+
+        <img src={R2.src} alt="" class="object-cover w-full h-full">
     </div>
     <div class="p-6 flex flex-col justify-center">
         <h2 class="text-6xl font-bold">Modelo Viena</h2>
         <div class="flex justify-center items-center">
             <div class="">
-                <img src="src/assets/modelo-3d.png" alt="" class="object-cover w-full h-full">
+                <img src={Viena.src} alt="" class="object-cover w-full h-full">
             </div>
 
             <div class="flex flex-col space-y-10">
@@ -52,10 +56,10 @@ import { DragCloseDrawerExample } from "./DragCloseDrawer";
         </div>
 
         <div class="flex justify-between">
-            <div class="border border-#13151a p-4 flex justify-center items-center">
+            <div class="border border-#13151a cursor-pointer hover-bg-animation hover:font-semibold p-4 flex justify-center items-center">
                 <DragCloseDrawerExample client:load />
             </div>
-            <a href="" class="border border-#13151a p-4">
+            <a href="" class="border border-#13151a hover-bg-animation hover:font-semibold p-4">
                 Solicitar informes
             </a>
         </div>

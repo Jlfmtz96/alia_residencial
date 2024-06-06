@@ -7,6 +7,10 @@ import {
   motion,
 } from "framer-motion";
 
+import Interior1 from '../assets/PRAGA_E24A_R01_COMEDOR_1.jpg';
+import PlantaB from '../assets/VIENA_CDM_24A_PB.png';
+import Interiores from '../assets/Unreal Engine Architectural Visualization.mp4';
+
 export const DragCloseDrawerExample = () => {
     const [open, setOpen] = useState(false);
     return (
@@ -15,7 +19,7 @@ export const DragCloseDrawerExample = () => {
           onClick={() => setOpen(true)}
           className="text-center focus:outline-none"
         >
-          Descubre el Modelo
+          Ver más
         </button>
   
         <DragCloseDrawer open={open} setOpen={setOpen}>
@@ -25,19 +29,20 @@ export const DragCloseDrawerExample = () => {
                       <h2 className="text-4xl font-bold">
                           Viena
                       </h2>
-                      <span className="text-blue-900 uppercase">Modelo</span>
+                      <span className="text-[#65604B] uppercase">Modelo</span>
                       <div className="mt-12">
                           <p>Superficie construida: 140 m2.</p>
                           <p>Máximo aprovechamiento en la distribución de espacios.</p>
                       </div>
                       <div className="mt-12">
-                          <a href={'#'} className='px-8 py-2 border-2 border-blue-900 text-blue-900'>
+                          <a href={'#'} className='px-8 py-2 border-2 border-[#65604B] text-[#65604B] hover-bg-animation hover:text-[#1D1D1B]'>
                               Solicitar Informes
                           </a>
                       </div>
                   </div>
                   <div className="col-span-2 h-[500px]">
-                      <img src="src/assets/PRAGA_E24A_R01_COMEDOR_1.jpg" alt="" className="w-full h-full object-cover"/>
+                      <video src={Interiores} loop autoPlay muted className="w-full h-full object-cover"></video>
+                      {/* <img src={Interior1.src} alt="" className="w-full h-full object-cover"/> */}
                   </div>
               </div>
   
@@ -45,10 +50,10 @@ export const DragCloseDrawerExample = () => {
                   <div>
                       <div className="">
                           <h2 className="text-4xl font-bold">Cada rincón diseñado <br /> PARA TI Y TU HOGAR</h2>
-                          <span className="text-blue-900 uppercase">Plano de Planta</span>
+                          <span className="text-[#65604B] uppercase">Plano de Planta</span>
                       </div>
                       <div className="flex mt-10">
-                          <img src="src/assets/VIENA_CDM_24A_PB.png" alt="" className="w-full h-full object-cover"/>
+                          <img src={PlantaB.src} alt="" className="w-full h-full object-cover"/>
                           {/* <img src="src/assets/VIENA_CDM_24A_PA.png" alt="" className="w-full h-full object-cover"/> */}
                       </div>
                   </div>

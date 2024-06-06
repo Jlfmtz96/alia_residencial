@@ -2,7 +2,7 @@
 import Facebook from "../icons/Facebook.astro";
 import Instagram from "../icons/Instagram.astro";
 
-
+import ContactImg from '../assets/24A_S5_CDM_R01_vista_1.jpg';
 ---
 
 <div id="contact" class="h-screen">
@@ -32,14 +32,14 @@ import Instagram from "../icons/Instagram.astro";
                 <label for="">Acepto las politicas del <a href="" class="text-neutral-700 font-medium">Aviso de privacidad</a></label>
             </div>
             <div class="col-span-2 justify-self-end">
-                <a href="" class="border border-#13151a p-4 uppercase">
+                <a href="" class="border border-#13151a hover-bg-animation hover:font-semibold p-4 uppercase">
                     Enviar
                 </a>
             </div>
         </form>
     </div>
     <div class="bg-neutral-800 relative">
-        <img src="src/assets/24A_S5_CDM_R01_vista_1.jpg" alt="" class="w-full h-full object-cover opacity-40">
+        <img src={ContactImg.src} alt="" class="w-full h-full object-cover opacity-40">
         <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h3 class="text-white font-bold text-6xl">Contáctanos</h3>
 
@@ -55,10 +55,10 @@ import Instagram from "../icons/Instagram.astro";
             <div class="text-white text-xl mt-6">
                 <span class="font-semibold">Siguenos en</span>
                 <div class="mt-4 flex gap-2">
-                    <a href="">
+                    <a href="" class="hover:text-[#CFC9BD]">
                         <Facebook />
                     </a>
-                    <a href="">
+                    <a href="" class="hover:text-[#CFC9BD]">
                         <Instagram />
                     </a>
                 </div>

@@ -55,4 +55,25 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
+
+	.hover-bg-animation {
+    position: relative;
+    overflow: hidden;
+    }
+
+    .hover-bg-animation::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #CFC9BD; /* Color de fondo al hacer hover */
+        transition: width 0.3s ease; /* Duración y suavizado de la animación */
+        z-index: -1;
+    }
+
+    .hover-bg-animation:hover::before {
+        width: 100%; /* Ancho completo al hacer hover */
+    }
 </style>
