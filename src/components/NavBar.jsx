@@ -38,8 +38,8 @@ export default function Navbar() {
 
   return (
     <div>
-        <header className={`py-2 px-10 fixed top-0 w-full justify-between z-40 text-white transition-all duration-300 ease-in-out ${
-          isScrolled ? 'backdrop-blur-md text-[#1D1D1B] font-semibold' : ''
+        <header className={`py-2 px-10 fixed top-0 w-full justify-between z-40 transition-all duration-300 ease-in-out ${
+          isScrolled ? 'backdrop-blur-md text-[#1D1D1B] font-semibold' : 'text-white'
         }`} style={{ backdropFilter: isScrolled ? 'blur(10px)' : 'none' }}>
             <div className="container mx-auto flex items-center">
                 <div className="flex flex-grow basis-0">
