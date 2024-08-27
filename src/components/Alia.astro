@@ -1,0 +1,75 @@
+---
+import { DragCloseDrawerExample } from "./DragCloseDrawer";
+
+import AliaR from '../assets/24A_R8_CDM_R01_ALIA.jpg';
+import Viena from '../assets/modelo-3d.png';
+import Recorrido from '../assets/bracha haziza korazim.mp4';
+---
+
+<div id="models" class="h-screen">
+    <div>
+        <!-- <video src={Recorrido} loop autoplay muted class="object-cover w-full h-full"></video> -->
+
+        <img src={AliaR.src} alt="" class="object-cover w-full h-full">
+    </div>
+    <div class="p-6 flex flex-col justify-center">
+        <h2 class="text-6xl font-bold">Modelo Alía</h2>
+        <div class="flex justify-center items-center">
+            <div class="">
+                <img src={Viena.src} alt="" class="object-cover w-full h-full">
+            </div>
+
+            <div class="flex flex-col space-y-10">
+                <div class="px-8 py-4 relative">
+                    <div class="uppercase text-lg tracking-widest">2 Recámaras</div>
+        
+                      {/* Borde en esquinas opuestas */}
+                    <div class="absolute top-0 left-0 border-l-2 border-t-2 h-10 w-20"></div>
+                    <div class="absolute bottom-0 right-0 border-r-2 border-b-2 h-10 w-20"></div>
+                </div>
+
+                <div class="px-8 py-2 relative">
+                    <div class="uppercase text-lg tracking-widest">3<sup>1/2</sup> Baños</div>
+        
+                      {/* Borde en esquinas opuestas */}
+                    <div class="absolute top-0 left-0 border-l-2 border-t-2 h-10 w-20"></div>
+                    <div class="absolute bottom-0 right-0 border-r-2 border-b-2 h-10 w-20"></div>
+                </div>
+
+                <div class="px-8 py-2 relative">
+                    <div class="uppercase text-lg tracking-widest">112.5 m<sup>2</sup> Construcción</div>
+        
+                      {/* Borde en esquinas opuestas */}
+                    <div class="absolute top-0 left-0 border-l-2 border-t-2 h-10 w-20"></div>
+                    <div class="absolute bottom-0 right-0 border-r-2 border-b-2 h-10 w-20"></div>
+                </div>
+
+                <!-- <div class="px-8 py-2 relative">
+                    <div class="uppercase text-lg tracking-widest">102 m<sup>2</sup> Terreno</div>
+        
+                      {/* Borde en esquinas opuestas */}
+                    <div class="absolute top-0 left-0 border-l-2 border-t-2 h-10 w-20"></div>
+                    <div class="absolute bottom-0 right-0 border-r-2 border-b-2 h-10 w-20"></div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <div class="flex justify-between">
+            <div class="border border-#13151a cursor-pointer hover-bg-animation hover:font-semibold p-4 flex justify-center items-center">
+                <DragCloseDrawerExample client:load />
+            </div>
+            <a href="" class="border border-#13151a hover-bg-animation hover:font-semibold p-4">
+                Solicitar informes
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    #models {
+		display: grid;
+		grid-template-columns: 1fr 1fr;/*La primer columna 350px lo demas 1 fracción */
+		/* grid-template-rows: 1fr 1fr 1fr; *ancho una fracción y altura automatico */
+	}
+</style>

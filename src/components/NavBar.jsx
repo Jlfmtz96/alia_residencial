@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import Logo from '../assets/Aliìa_logo_blanco.png'
+import Logo from '../assets/Aliia_logo_blanco.png'
 import LogoColor from '../assets/domum color.png'
 
 export default function Navbar() {
